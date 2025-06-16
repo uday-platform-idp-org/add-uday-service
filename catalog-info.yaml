@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: add-uday-service
+  description: Python app that displays time - named add-uday-service
+  annotations:
+    github.com/project-slug: uday-platform-idp-org/add-uday-service
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: group:default/devops
+  lifecycle: experimental

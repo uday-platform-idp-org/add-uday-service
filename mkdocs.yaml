@@ -1,0 +1,14 @@
+site_name: add-uday-service
+site_description: 'Documentação de usabilidade do add-uday-service'
+repo_url: https://github.com/uday-platform-idp-org/add-uday-service
+edit_uri: edit/main/docs
+
+plugins:
+  - techdocs-core
+  - redirects:
+      redirect_maps:
+        'index.md': 'docs/index.md'
+
+nav:
+  - Overview:
+      - Como usar o APP Uday: 'docs/index.md'

@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: add-uday-service-ingress
+spec:
+  rules:
+  - host: add-uday-service.uday.com.br
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: add-uday-service-service
+            port:
+              number: 8081

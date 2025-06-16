@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: add-uday-service
+  labels:
+    app: add-uday-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: add-uday-service
+  template:
+    metadata:
+      labels:
+        app: add-uday-service
+    spec:
+      containers:
+      - name: add-uday-service
+        image: udaytc/add-uday-service:v1
+        ports:
+        - containerPort: 5000
